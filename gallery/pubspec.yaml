@@ -4,9 +4,6 @@ author: José Carlos López Gaona <jcl.isc@gmail.com>
 homepage: https://bitbucket.org/apexjcl/flutter_widget_gallery
 version: 0.1.1
 
-environment:
-    sdk: ">=1.19.0 <2.0.0"
-
 dependencies:
   flutter:
     sdk: flutter

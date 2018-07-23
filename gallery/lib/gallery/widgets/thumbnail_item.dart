@@ -5,12 +5,14 @@ class ThumbnailItem extends StatefulWidget {
   final Function onPressed;
   final Color activeColor;
   final bool active;
+  final Color backgroundColor;
 
   const ThumbnailItem({
     Key key,
     @required this.onPressed,
     @required this.child,
     @required this.activeColor,
+    this.backgroundColor = const Color(0xFFFFFFFF),
     this.active = false,
   }) : super(key: key);
 
@@ -53,6 +55,7 @@ class ThumbnailItemState extends State<ThumbnailItem>
               onTap: widget.onPressed,
               child: Container(
                 decoration: BoxDecoration(
+                  color: widget.backgroundColor,
                   border: Border.all(
                     width: 4.0 * _controller.value,
                     color: widget.activeColor,

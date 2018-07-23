@@ -14,6 +14,8 @@ class Gallery extends StatefulWidget {
   /// Indicates the color for the overall background
   final Color backgroundColor;
 
+  final Color carouselBackgroundItemColor;
+
   final Function(int index) onChildTap;
   final Function(int index) onChildLongPress;
 
@@ -21,7 +23,8 @@ class Gallery extends StatefulWidget {
     Key key,
     @required this.activeItemColor,
     @required this.children,
-    this.carouselBackgroundColor,
+    this.carouselBackgroundColor = const Color(0xCCFFFFFF),
+    this.carouselBackgroundItemColor = const Color(0xFFFFFFFF),
     this.backgroundColor = const Color(0xFF000000),
     this.onChildTap,
     this.onChildLongPress,
@@ -76,6 +79,7 @@ class _GalleryState extends State<Gallery> {
                   .map<ThumbnailItem>((child) => ThumbnailItem(
                         child: child,
                         activeColor: widget.activeItemColor,
+                        backgroundColor: widget.carouselBackgroundItemColor,
                         active: activeChild == child,
                         onPressed: () {
                           setState(() {

@@ -39,9 +39,14 @@ class MyHomePage extends StatelessWidget {
         carouselBackgroundColor: Color(0xAAE3E3E3),
         children: List.generate<Widget>(
           10,
-          (index) => Image.network(
-                'https://picsum.photos/960/540?image=$index',
-                fit: BoxFit.cover,
+          (index) => SizedBox(
+                width: double.infinity,
+                height: double.infinity,
+                child: Image.network(
+                  index.isOdd
+                      ? 'https://picsum.photos/960/540?image=$index'
+                      : 'https://picsum.photos/540/960?image=$index',
+                ),
               ),
         ),
         onChildTap: (index) => print('tapped on $index'),
