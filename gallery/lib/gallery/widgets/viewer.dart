@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/widgets.dart';
 
-import 'viewer.child.dart';
+import 'viewer_child.dart';
 
 class Viewer extends StatefulWidget {
   /// Children to show on the viewer
