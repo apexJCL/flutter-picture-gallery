@@ -8,10 +8,23 @@ class Gallery extends StatefulWidget {
   final List<Widget> children;
   final Color activeItemColor;
 
+  /// Indicates the carousel background color
+  final Color carouselBackgroundColor;
+
+  /// Indicates the color for the overall background
+  final Color backgroundColor;
+
+  final Function(int index) onChildTap;
+  final Function(int index) onChildLongPress;
+
   const Gallery({
     Key key,
     @required this.activeItemColor,
     @required this.children,
+    this.carouselBackgroundColor,
+    this.backgroundColor = const Color(0xFF000000),
+    this.onChildTap,
+    this.onChildLongPress,
   }) : super(key: key);
 
   @override
@@ -37,6 +50,7 @@ class _GalleryState extends State<Gallery> {
     return Stack(
       children: [
         Viewer(
+          backgroundColor: widget.backgroundColor,
           children: widget.children,
           activeNotifier: activeIndexNotifier,
           onActiveChanged: (index) {
@@ -44,11 +58,18 @@ class _GalleryState extends State<Gallery> {
               activeChild = widget.children[index];
             });
           },
+          onTap: () {
+            widget.onChildTap != null ? widget.onChildTap(activeIndex) : null;
+          },
+          onLongPress: () {
+            widget.onChildLongPress != null ? widget.onChildLongPress(activeIndex) : null;
+          },
         ),
         // AppBar, Carousel, stuff
         Align(
           child: ThumbnailsDrawer(
             child: ThumbnailsCarousel(
+              backgroundColor: widget.carouselBackgroundColor,
               pictures: widget.children
                   .map<ThumbnailItem>((child) => ThumbnailItem(
                         child: child,

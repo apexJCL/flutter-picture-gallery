@@ -11,13 +11,24 @@ class Viewer extends StatefulWidget {
   /// Reports when the user changed to another child by swiping
   final Function(int) onActiveChanged;
 
+  /// When a child has been tapped
+  final Function onTap;
+
+  /// When a child has been long pressed
+  final Function onLongPress;
+
   final ValueNotifier<int> activeNotifier;
+
+  final Color backgroundColor;
 
   const Viewer({
     Key key,
     @required this.children,
     @required this.onActiveChanged,
     @required this.activeNotifier,
+    this.backgroundColor = const Color(0xFF000000),
+    this.onTap,
+    this.onLongPress,
   }) : super(key: key);
 
   @override
@@ -90,7 +101,7 @@ class _PictureViewerState extends State<Viewer>
     return GestureDetector(
       child: Container(
         alignment: Alignment.center,
-        color: Color(0xFF000000),
+        color: widget.backgroundColor,
         child: Stack(
           children: pictures,
         ),
@@ -99,6 +110,8 @@ class _PictureViewerState extends State<Viewer>
       onScaleEnd: _scaleEnd,
       onScaleUpdate: _scaleUpdate,
       onDoubleTap: _doubleTapHandle,
+      onTap: widget.onTap,
+      onLongPress: widget.onLongPress,
     );
   }
 

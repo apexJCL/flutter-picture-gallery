@@ -35,6 +35,8 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Gallery(
         activeItemColor: Colors.blueAccent,
+        backgroundColor: Color(0xFFE4E4E4),
+        carouselBackgroundColor: Color(0xFFFFFFFF),
         children: List.generate<Widget>(
           10,
           (index) => Image.network(
@@ -42,6 +44,8 @@ class MyHomePage extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
         ),
+        onChildTap: (index) => print('tapped on $index'),
+        onChildLongPress: (index) => print('long press on $index'),
       ),
     );
   }

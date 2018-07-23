@@ -3,10 +3,12 @@ import 'package:gallery/gallery/widgets/thumbnail.item.dart';
 
 class ThumbnailsCarousel extends StatefulWidget {
   final List<ThumbnailItem> pictures;
+  final Color backgroundColor;
 
   const ThumbnailsCarousel({
     Key key,
     @required this.pictures,
+    this.backgroundColor = const Color(0xCCFEFEFE),
   }) : super(key: key);
 
   @override
@@ -17,7 +19,7 @@ class _ImageCarouselState extends State<ThumbnailsCarousel> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xCCFEFEFE),
+      color: widget.backgroundColor,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: widget.pictures,
