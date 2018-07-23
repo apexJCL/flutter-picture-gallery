@@ -1,5 +1,5 @@
-name: gallery
-description: Photo (Media?) gallery viewer
+name: flutter_widget_gallery
+description: Widget Gallery Viewer
 
 dependencies:
   flutter:

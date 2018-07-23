@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c36b828-b998-46b0-8479-dd4dac4a6acd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/gallery/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/test/widget_test.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +24,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="144">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/CHANGELOG.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gallery/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="140">
+                <caret line="43" selection-start-line="43" selection-end-line="43" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widget_test.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/test/widget_test.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#1047#0" expanded="true" />
+                <element signature="e#354#393#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,8 +94,8 @@
       <file leaf-file-name="gallery.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="64" column="90" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -42,16 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewer.child.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.child.dart">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="viewer.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-485">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -62,20 +118,11 @@
       <file leaf-file-name="thumbnails.carousel.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="18">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thumbnail.item.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -84,16 +131,7 @@
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="widgets.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -134,11 +172,17 @@
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.picture.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart" />
-        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart" />
-        <option value="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart" />
+        <option value="$PROJECT_DIR$/gallery/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/gallery/README.md" />
+        <option value="$PROJECT_DIR$/gallery/test/widget_test.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/flutter_widget_gallery/gallery.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/main.dart" />
+        <option value="$PROJECT_DIR$/gallery/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/gallery/LICENSE" />
       </list>
     </option>
   </component>
@@ -153,7 +197,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="4" />
-    <option name="width" value="1370" />
+    <option name="width" value="1854" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -167,17 +211,6 @@
           <expand>
             <path>
               <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -272,15 +305,15 @@
       <workItem from="1531967115713" duration="4577000" />
       <workItem from="1532293024306" duration="8615000" />
       <workItem from="1532312583018" duration="3278000" />
-      <workItem from="1532352220009" duration="7131000" />
+      <workItem from="1532352220009" duration="7771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27014000" />
+    <option name="totallyTimeSpent" value="27654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="4" width="1370" height="1050" extended-state="0" />
+    <frame x="0" y="4" width="1854" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -301,15 +334,15 @@
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21790724" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32901832" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32901832" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.2858684" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" weight="0.2858684" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924812" weight="0.32901832" />
       <window_info id="Captures" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2503771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18342541" />
       <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -589,32 +622,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-485">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="64" column="90" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
+        <state relative-caret-position="18">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="140">
+            <caret line="43" selection-start-line="43" selection-end-line="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/test/widget_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#1047#0" expanded="true" />
+            <element signature="e#354#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,17 +673,44 @@
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="144">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

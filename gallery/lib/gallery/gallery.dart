@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gallery/gallery/widgets/widgets.dart';
+import 'package:flutter_widget_gallery/gallery/widgets/widgets.dart';
 
 class Gallery extends StatefulWidget {
   /// List of children to be rendered on both the view
@@ -62,7 +62,9 @@ class _GalleryState extends State<Gallery> {
             widget.onChildTap != null ? widget.onChildTap(activeIndex) : null;
           },
           onLongPress: () {
-            widget.onChildLongPress != null ? widget.onChildLongPress(activeIndex) : null;
+            widget.onChildLongPress != null
+                ? widget.onChildLongPress(activeIndex)
+                : null;
           },
         ),
         // AppBar, Carousel, stuff
