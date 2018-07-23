@@ -1,7 +1,8 @@
 import 'dart:ui';
 
-import 'picture.dart';
 import 'package:flutter/widgets.dart';
+
+import 'picture.dart';
 
 class PictureViewer extends StatefulWidget {
   final List<ImageProvider> pictures;
@@ -65,9 +66,9 @@ class _PictureViewerState extends State<PictureViewer>
           children: pictures,
         ),
       ),
-      onHorizontalDragStart: _horizontalDragStart,
-      onHorizontalDragEnd: _horizontalDragEnd,
-      onHorizontalDragUpdate: _horizontalDragUpdate,
+//      onHorizontalDragStart: _horizontalDragStart,
+//      onHorizontalDragEnd: _horizontalDragEnd,
+//      onHorizontalDragUpdate: _horizontalDragUpdate,
       onScaleStart: _scaleStart,
       onScaleEnd: _scaleEnd,
       onScaleUpdate: _scaleUpdate,
@@ -81,7 +82,7 @@ class _PictureViewerState extends State<PictureViewer>
       translation: Offset(index - pictureScrollPercent, 0.0),
       child: PictureItem(
         src: source,
-        shouldScale: index == pictureScrollPercent,
+        shouldScale: index == pictureScrollPercent.round(),
         scale: _currentScale,
         focalPoint: _currentOffset,
       ),
@@ -89,44 +90,6 @@ class _PictureViewerState extends State<PictureViewer>
   }
 
   bool get scaling => _currentScale > 1.0;
-
-  void _horizontalDragStart(DragStartDetails details) {
-    if (scaling) {
-      return;
-    }
-    initialDragPosition = details.globalPosition;
-    initialPercentValue = scrollPercent;
-  }
-
-  void _horizontalDragUpdate(DragUpdateDetails details) {
-    if (scaling) {
-      return;
-    }
-    final currentDrag = details.globalPosition;
-    final dragDistance = currentDrag - initialDragPosition;
-    final double singlePictureDragPercent =
-        dragDistance.dx / context.size.width;
-    setState(() {
-      scrollPercent = (initialPercentValue +
-              (-singlePictureDragPercent / widget.pictures.length))
-          .clamp(0.0, 1.0 - (1 / widget.pictures.length));
-    });
-  }
-
-  void _horizontalDragEnd(DragEndDetails details) {
-    if (scaling) {
-      return;
-    }
-    finishDragStart = scrollPercent;
-    finishDragEnd = (scrollPercent * widget.pictures.length).round() /
-        widget.pictures.length;
-    controller.forward(from: 0.0);
-
-    setState(() {
-      initialDragPosition = null;
-      initialPercentValue = null;
-    });
-  }
 
   @override
   void dispose() {
@@ -148,23 +111,47 @@ class _PictureViewerState extends State<PictureViewer>
 
   void _scaleStart(ScaleStartDetails details) {
     setState(() {
+      initialDragPosition = details.focalPoint;
+      initialPercentValue = scrollPercent;
       _previousScale = _currentScale;
       _normalizedOffset = (details.focalPoint - _currentOffset) / _currentScale;
     });
   }
 
   void _scaleUpdate(ScaleUpdateDetails details) {
-    print('scaleUpdate called');
     setState(() {
       _currentScale = (_previousScale * details.scale).clamp(1.0, 4.0);
       // Ensure that image location under the focal point stays in the same place despite scaling.
       _currentOffset =
           _clampOffset(details.focalPoint - _normalizedOffset * _currentScale);
     });
+    if (!scaling) {
+      // Drag
+      final currentDrag = details.focalPoint;
+      final dragDistance = currentDrag - initialDragPosition;
+      final double singlePictureDragPercent =
+          dragDistance.dx / context.size.width;
+      setState(() {
+        scrollPercent = (initialPercentValue +
+                (-singlePictureDragPercent / widget.pictures.length))
+            .clamp(0.0, 1.0 - (1 / widget.pictures.length));
+      });
+    }
   }
 
   void _scaleEnd(ScaleEndDetails details) {
-    // Nothing yet
+    if (scaling) {
+      return;
+    }
+    finishDragStart = scrollPercent;
+    finishDragEnd = (scrollPercent * widget.pictures.length).round() /
+        widget.pictures.length;
+    controller.forward(from: 0.0);
+
+    setState(() {
+      initialDragPosition = null;
+      initialPercentValue = null;
+    });
   }
 
 // Taken from Flutter / Gallery / Material / GridView
