@@ -25,7 +25,12 @@ class _PictureViewerState extends State<PictureViewer>
   double finishDragStart;
   double finishDragEnd;
   double scrollPercent = 0.0;
-  double currentScale = 1.0;
+
+  // Scale and image panning
+  Offset _currentOffset = Offset.zero;
+  double _currentScale = 1.0;
+  Offset _normalizedOffset;
+  double _previousScale;
 
   @override
   void initState() {
@@ -39,7 +44,7 @@ class _PictureViewerState extends State<PictureViewer>
         setState(() {
           scrollPercent =
               lerpDouble(finishDragStart, finishDragEnd, controller.value);
-          currentScale = 1.0;
+          if (_currentScale == 1.0) _currentOffset = Offset(0.0, 0.0);
         });
       });
   }
@@ -72,23 +77,31 @@ class _PictureViewerState extends State<PictureViewer>
   Widget _buildPicture(BuildContext context, int index, ImageProvider source) {
     final double pictureScrollPercent =
         scrollPercent / (1 / widget.pictures.length);
-    index == pictureScrollPercent ? print('index is $index') : null;
     return FractionalTranslation(
       translation: Offset(index - pictureScrollPercent, 0.0),
       child: PictureItem(
         src: source,
         shouldScale: index == pictureScrollPercent,
-        scale: currentScale,
+        scale: _currentScale,
+        focalPoint: _currentOffset,
       ),
     );
   }
 
+  bool get scaling => _currentScale > 1.0;
+
   void _horizontalDragStart(DragStartDetails details) {
+    if (scaling) {
+      return;
+    }
     initialDragPosition = details.globalPosition;
     initialPercentValue = scrollPercent;
   }
 
   void _horizontalDragUpdate(DragUpdateDetails details) {
+    if (scaling) {
+      return;
+    }
     final currentDrag = details.globalPosition;
     final dragDistance = currentDrag - initialDragPosition;
     final double singlePictureDragPercent =
@@ -101,6 +114,9 @@ class _PictureViewerState extends State<PictureViewer>
   }
 
   void _horizontalDragEnd(DragEndDetails details) {
+    if (scaling) {
+      return;
+    }
     finishDragStart = scrollPercent;
     finishDragEnd = (scrollPercent * widget.pictures.length).round() /
         widget.pictures.length;
@@ -118,13 +134,38 @@ class _PictureViewerState extends State<PictureViewer>
     super.dispose();
   }
 
-  void _scaleStart(ScaleStartDetails details) {}
+  // Taken from Flutter / Gallery / Material / GridView
 
-  void _scaleUpdate(ScaleUpdateDetails details) {
+  // The maximum offset value is 0,0. If the size of this renderer's box is w,h
+  // then the minimum offset value is w - _scale * w, h - _scale * h.
+  Offset _clampOffset(Offset offset) {
+    final Size size = context.size;
+    final Offset minOffset =
+        new Offset(size.width, size.height) * (1.0 - _currentScale);
+    return new Offset(
+        offset.dx.clamp(minOffset.dx, 0.0), offset.dy.clamp(minOffset.dy, 0.0));
+  }
+
+  void _scaleStart(ScaleStartDetails details) {
     setState(() {
-      currentScale = details.scale.clamp(1.0, 4.0);
+      _previousScale = _currentScale;
+      _normalizedOffset = (details.focalPoint - _currentOffset) / _currentScale;
     });
   }
 
-  void _scaleEnd(ScaleEndDetails details) {}
+  void _scaleUpdate(ScaleUpdateDetails details) {
+    print('scaleUpdate called');
+    setState(() {
+      _currentScale = (_previousScale * details.scale).clamp(1.0, 4.0);
+      // Ensure that image location under the focal point stays in the same place despite scaling.
+      _currentOffset =
+          _clampOffset(details.focalPoint - _normalizedOffset * _currentScale);
+    });
+  }
+
+  void _scaleEnd(ScaleEndDetails details) {
+    // Nothing yet
+  }
+
+// Taken from Flutter / Gallery / Material / GridView
 }
