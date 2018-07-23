@@ -2,21 +2,30 @@ import 'dart:ui';
 
 import 'package:flutter/widgets.dart';
 
-import 'picture.dart';
+import 'viewer.child.dart';
 
-class PictureViewer extends StatefulWidget {
-  final List<ImageProvider> pictures;
+class Viewer extends StatefulWidget {
+  /// Children to show on the viewer
+  final List<Widget> children;
 
-  const PictureViewer({
+  /// Indicates the initial active index, or subsequent index changes
+  final int activeIndex;
+
+  /// Reports when the user changed to another child by swiping
+  final Function(int) onActiveChanged;
+
+  const Viewer({
     Key key,
-    @required this.pictures,
+    @required this.children,
+    @required this.activeIndex,
+    @required this.onActiveChanged,
   }) : super(key: key);
 
   @override
   _PictureViewerState createState() => new _PictureViewerState();
 }
 
-class _PictureViewerState extends State<PictureViewer>
+class _PictureViewerState extends State<Viewer>
     with SingleTickerProviderStateMixin {
   AnimationController controller;
 
@@ -40,7 +49,14 @@ class _PictureViewerState extends State<PictureViewer>
       vsync: this,
       duration: const Duration(milliseconds: 100),
     )
-      ..addStatusListener((status) {})
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed ||
+            status == AnimationStatus.dismissed) {
+          widget.onActiveChanged != null
+              ? widget.onActiveChanged(currentIndex)
+              : null;
+        }
+      })
       ..addListener(() {
         setState(() {
           scrollPercent =
@@ -48,14 +64,18 @@ class _PictureViewerState extends State<PictureViewer>
           if (_currentScale == 1.0) _currentOffset = Offset(0.0, 0.0);
         });
       });
+    scrollPercent = (1 / widget.children.length) * widget.activeIndex;
   }
+
+  int get currentIndex =>
+      (scrollPercent / (1 / widget.children.length)).round();
 
   @override
   Widget build(BuildContext context) {
     final List<Widget> pictures = [];
 
-    for (var i = 0; i < widget.pictures.length; i++) {
-      pictures.add(_buildPicture(context, i, widget.pictures[i]));
+    for (var i = 0; i < widget.children.length; i++) {
+      pictures.add(_buildChild(context, i, widget.children[i]));
     }
 
     return GestureDetector(
@@ -66,23 +86,20 @@ class _PictureViewerState extends State<PictureViewer>
           children: pictures,
         ),
       ),
-//      onHorizontalDragStart: _horizontalDragStart,
-//      onHorizontalDragEnd: _horizontalDragEnd,
-//      onHorizontalDragUpdate: _horizontalDragUpdate,
       onScaleStart: _scaleStart,
       onScaleEnd: _scaleEnd,
       onScaleUpdate: _scaleUpdate,
     );
   }
 
-  Widget _buildPicture(BuildContext context, int index, ImageProvider source) {
+  Widget _buildChild(BuildContext context, int index, Widget child) {
     final double pictureScrollPercent =
-        scrollPercent / (1 / widget.pictures.length);
+        scrollPercent / (1 / widget.children.length);
     return FractionalTranslation(
       translation: Offset(index - pictureScrollPercent, 0.0),
-      child: PictureItem(
-        src: source,
-        shouldScale: index == pictureScrollPercent.round(),
+      child: ViewerChild(
+        child: child,
+        shouldScale: index == currentIndex,
         scale: _currentScale,
         focalPoint: _currentOffset,
       ),
@@ -133,8 +150,8 @@ class _PictureViewerState extends State<PictureViewer>
           dragDistance.dx / context.size.width;
       setState(() {
         scrollPercent = (initialPercentValue +
-                (-singlePictureDragPercent / widget.pictures.length))
-            .clamp(0.0, 1.0 - (1 / widget.pictures.length));
+                (-singlePictureDragPercent / widget.children.length))
+            .clamp(0.0, 1.0 - (1 / widget.children.length));
       });
     }
   }
@@ -144,8 +161,8 @@ class _PictureViewerState extends State<PictureViewer>
       return;
     }
     finishDragStart = scrollPercent;
-    finishDragEnd = (scrollPercent * widget.pictures.length).round() /
-        widget.pictures.length;
+    finishDragEnd = (scrollPercent * widget.children.length).round() /
+        widget.children.length;
     controller.forward(from: 0.0);
 
     setState(() {

@@ -3,13 +3,15 @@ import 'package:flutter/widgets.dart';
 import 'package:gallery/gallery/widgets/widgets.dart';
 
 class Gallery extends StatefulWidget {
-  final List<ImageProvider> pictures;
+  /// List of children to be rendered on both the view
+  /// and the drawer picker
+  final List<Widget> children;
   final Color activeItemColor;
 
   const Gallery({
     Key key,
-    @required this.pictures,
     @required this.activeItemColor,
+    @required this.children,
   }) : super(key: key);
 
   @override
@@ -17,34 +19,42 @@ class Gallery extends StatefulWidget {
 }
 
 class _GalleryState extends State<Gallery> {
-  ImageProvider activeProvider;
+  Widget activeChild;
   bool carouselVisible = true;
 
   @override
   void initState() {
     super.initState();
-    activeProvider = widget.pictures.first;
+    activeChild = widget.children.first;
   }
+
+  int get activeIndex => widget.children.indexOf(activeChild);
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        PictureViewer(
-          pictures: widget.pictures,
+        Viewer(
+          children: widget.children,
+          activeIndex: activeIndex,
+          onActiveChanged: (index) {
+            setState(() {
+              activeChild = widget.children[index];
+            });
+          },
         ),
         // AppBar, Carousel, stuff
         Align(
           child: ThumbnailsDrawer(
             child: ThumbnailsCarousel(
-              pictures: widget.pictures
-                  .map<ThumbnailPicture>((provider) => ThumbnailPicture(
+              pictures: widget.children
+                  .map<ThumbnailItem>((child) => ThumbnailItem(
+                        child: child,
                         activeColor: widget.activeItemColor,
-                        active: activeProvider == provider,
-                        imageProvider: provider,
+                        active: activeChild == child,
                         onPressed: () {
                           setState(() {
-                            activeProvider = provider;
+                            activeChild = child;
                           });
                         },
                       ))

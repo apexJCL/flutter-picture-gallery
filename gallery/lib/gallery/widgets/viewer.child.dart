@@ -1,14 +1,14 @@
 import 'package:flutter/widgets.dart';
 
-class PictureItem extends StatelessWidget {
+class ViewerChild extends StatelessWidget {
+  final Widget child;
   final Offset focalPoint;
-  final ImageProvider src;
   final double scale;
   final bool shouldScale;
 
-  const PictureItem({
+  const ViewerChild({
     Key key,
-    @required this.src,
+    @required this.child,
     this.scale = 1.0,
     this.shouldScale = false,
     this.focalPoint,
@@ -17,16 +17,14 @@ class PictureItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!shouldScale) {
-      return Image(image: src);
+      return child;
     }
 
     return Transform(
       transform: Matrix4.identity()
         ..translate(focalPoint.dx, focalPoint.dy)
         ..scale(scale),
-      child: Image(
-        image: src,
-      ),
+      child: child,
     );
   }
 }

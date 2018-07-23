@@ -35,9 +35,12 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Gallery(
         activeItemColor: Colors.blueAccent,
-        pictures: List.generate<ImageProvider>(
+        children: List.generate<Widget>(
           10,
-          (index) => NetworkImage('https://picsum.photos/960/540?image=$index'),
+          (index) => Image.network(
+                'https://picsum.photos/960/540?image=$index',
+                fit: BoxFit.cover,
+              ),
         ),
       ),
     );

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:gallery/gallery/widgets/thumbnail.picture.dart';
+import 'package:gallery/gallery/widgets/thumbnail.item.dart';
 
 class ThumbnailsCarousel extends StatefulWidget {
-  final List<ThumbnailPicture> pictures;
+  final List<ThumbnailItem> pictures;
 
   const ThumbnailsCarousel({
     Key key,

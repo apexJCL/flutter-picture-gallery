@@ -1,5 +1,5 @@
 export 'thumbnails.drawer.dart';
-export 'thumbnail.picture.dart';
+export 'thumbnail.item.dart';
 export 'thumbnails.carousel.dart';
-export 'picture.viewer.dart';
-export 'picture.dart';
+export 'viewer.dart';
+export 'viewer.child.dart';
