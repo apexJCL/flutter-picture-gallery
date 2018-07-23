@@ -2,7 +2,7 @@ name: flutter_widget_gallery
 description: Widget Gallery Viewer
 author: José Carlos López Gaona
 homepage: https://bitbucket.org/apexjcl/flutter_widget_gallery
-version: 0.1.0
+version: 0.1.1
 
 environment:
     sdk: ">=1.19.0 <2.0.0"
