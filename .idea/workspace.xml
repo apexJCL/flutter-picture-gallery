@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c36b828-b998-46b0-8479-dd4dac4a6acd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/gallery/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/CHANGELOG.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,12 +32,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gallery/CHANGELOG.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" selection-start-column="2" selection-end-column="2" />
+              <first_editor relative-caret-position="36">
+                <caret line="2" column="91" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,11 +53,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="198">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -99,20 +108,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewer.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-485">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thumbnails.carousel.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+      <file leaf-file-name="thumbnails_carousel.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_carousel.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
@@ -123,8 +120,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thumbnails.drawer.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+      <file leaf-file-name="thumbnails_drawer.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_drawer.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
               <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
@@ -175,10 +172,11 @@
         <option value="$PROJECT_DIR$/gallery/lib/flutter_widget_gallery/gallery.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/main.dart" />
-        <option value="$PROJECT_DIR$/gallery/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/gallery/LICENSE" />
         <option value="$PROJECT_DIR$/gallery/README.md" />
         <option value="$PROJECT_DIR$/gallery/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/gallery/CHANGELOG.md" />
       </list>
     </option>
   </component>
@@ -208,6 +206,24 @@
             <path>
               <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,12 +317,12 @@
       <workItem from="1531967115713" duration="4577000" />
       <workItem from="1532293024306" duration="8615000" />
       <workItem from="1532312583018" duration="3278000" />
-      <workItem from="1532352220009" duration="8098000" />
+      <workItem from="1532352220009" duration="8378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27981000" />
+    <option name="totallyTimeSpent" value="28261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
@@ -336,12 +352,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" weight="0.2858684" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924812" visible="true" weight="0.6491416" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924812" visible="true" weight="0.37017167" />
       <window_info id="Captures" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17678382" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.17678382" />
       <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50152904" side_tool="true" weight="0.17678382" />
       <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32928178" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,14 +401,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.child.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer_child.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_carousel.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
@@ -402,14 +418,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail_item.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="102" column="7" selection-start-line="94" selection-start-column="4" selection-end-line="102" selection-end-column="7" />
@@ -453,7 +469,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.child.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer_child.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
@@ -461,7 +477,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/navigator.dart" />
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_carousel.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
@@ -471,14 +487,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail_item.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="102" column="7" selection-start-line="94" selection-start-column="4" selection-end-line="102" selection-end-column="7" />
@@ -523,7 +539,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets.dart" />
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail_item.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
@@ -549,14 +565,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/drawer.container.dart" />
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_carousel.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
@@ -598,10 +614,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets.dart" />
     <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/navigator.dart" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.child.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer_child.dart">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
@@ -611,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.item.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail_item.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
@@ -639,7 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_carousel.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
@@ -649,7 +662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails_drawer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
@@ -676,16 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gallery/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -705,8 +708,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="198">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="91" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
