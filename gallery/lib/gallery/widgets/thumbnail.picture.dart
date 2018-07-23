@@ -1,12 +1,12 @@
 import 'package:flutter/widgets.dart';
 
-class CarouselPicture extends StatelessWidget {
+class ThumbnailPicture extends StatelessWidget {
   final ImageProvider imageProvider;
   final Function onPressed;
   final Color activeColor;
   final bool active;
 
-  const CarouselPicture({
+  const ThumbnailPicture({
     Key key,
     @required this.onPressed,
     @required this.imageProvider,

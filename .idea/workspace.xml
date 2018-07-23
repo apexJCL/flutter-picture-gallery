@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c36b828-b998-46b0-8479-dd4dac4a6acd" name="Default" comment="" />
+    <list default="true" id="7c36b828-b998-46b0-8479-dd4dac4a6acd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.picture.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.picture.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +34,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gallery.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="53" column="6" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="53" selection-end-column="6" />
+            <state relative-caret-position="486">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="picture.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="picture.viewer.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carousel.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.dart">
+      <file leaf-file-name="thumbnails.carousel.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="54">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -57,20 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carousel.picture.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.picture.dart">
+      <file leaf-file-name="thumbnail.picture.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.picture.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carousel.drawer.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.drawer.dart">
+      <file leaf-file-name="thumbnails.drawer.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="78" column="6" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="78" selection-end-column="6" />
+            <state relative-caret-position="648">
+              <caret line="102" column="7" selection-start-line="94" selection-start-column="4" selection-end-line="102" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -79,10 +110,7 @@
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -94,7 +122,11 @@
       <find>const Dura</find>
       <find>CarouseLDra</find>
       <find>of(</find>
+      <find>initialDragpercent</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -107,14 +139,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.picture.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/main.dart" />
-        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.dart" />
-        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.drawer.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/drawer.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.picture.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart" />
       </list>
     </option>
   </component>
@@ -129,6 +163,7 @@
     <option name="width" value="1374" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -154,6 +189,13 @@
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gallery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="gallery" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13192000" />
+    <option name="totallyTimeSpent" value="16605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="4" width="1374" height="1050" extended-state="0" />
@@ -275,20 +317,51 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="NativeScript" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21359223" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901832" />
       <window_info id="Captures" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962406" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32932332" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="NativeScript" order="7" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32901832" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962406" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Logcat" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21359223" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32932332" />
+      <window_info id="Captures" order="2" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="RNConsole" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21790724" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.picture.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.picture.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
@@ -357,42 +430,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="54">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/drawer.container.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/carousel.drawer.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="78" column="6" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="78" selection-end-column="6" />
+        <state relative-caret-position="558">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
+    <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="594">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="53" column="6" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="53" selection-end-column="6" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets.dart" />
+    <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/navigator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="1172" column="8" lean-forward="true" selection-start-line="1172" selection-start-column="8" selection-end-line="1172" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnail.picture.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/widgets.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="102" column="7" selection-start-line="94" selection-start-column="4" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/picture.viewer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:gallery/gallery/widgets/carousel.picture.dart';
+import 'package:gallery/gallery/widgets/thumbnail.picture.dart';
 
-class Carousel extends StatefulWidget {
-  final List<CarouselPicture> pictures;
+class ThumbnailsCarousel extends StatefulWidget {
+  final List<ThumbnailPicture> pictures;
 
-  const Carousel({
+  const ThumbnailsCarousel({
     Key key,
     @required this.pictures,
   }) : super(key: key);
@@ -13,7 +13,7 @@ class Carousel extends StatefulWidget {
   _ImageCarouselState createState() => new _ImageCarouselState();
 }
 
-class _ImageCarouselState extends State<Carousel> {
+class _ImageCarouselState extends State<ThumbnailsCarousel> {
   @override
   Widget build(BuildContext context) {
     return Container(

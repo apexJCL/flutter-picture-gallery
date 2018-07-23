@@ -30,12 +30,15 @@ class _GalleryState extends State<Gallery> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        PictureViewer(
+          pictures: widget.pictures,
+        ),
         // AppBar, Carousel, stuff
         Align(
-          child: CarouselDrawer(
-            drawerChild: Carousel(
+          child: ThumbnailsDrawer(
+            child: ThumbnailsCarousel(
               pictures: widget.pictures
-                  .map<CarouselPicture>((provider) => CarouselPicture(
+                  .map<ThumbnailPicture>((provider) => ThumbnailPicture(
                         activeColor: widget.activeItemColor,
                         active: activeProvider == provider,
                         imageProvider: provider,

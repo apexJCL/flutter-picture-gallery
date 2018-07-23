@@ -1,20 +1,20 @@
 import 'package:flutter/widgets.dart';
 
-class CarouselDrawer extends StatefulWidget {
-  final Widget drawerChild;
+class ThumbnailsDrawer extends StatefulWidget {
+  final Widget child;
   final Function(bool open) onVisibilityChanged;
 
-  const CarouselDrawer({
+  const ThumbnailsDrawer({
     Key key,
     this.onVisibilityChanged,
-    @required this.drawerChild,
+    @required this.child,
   }) : super(key: key);
 
   @override
   _CarouselState createState() => new _CarouselState();
 }
 
-class _CarouselState extends State<CarouselDrawer>
+class _CarouselState extends State<ThumbnailsDrawer>
     with TickerProviderStateMixin {
   AnimationController controller;
 
@@ -62,7 +62,7 @@ class _CarouselState extends State<CarouselDrawer>
             alignment: Alignment.bottomCenter,
             child: FractionallySizedBox(
               heightFactor: 0.90,
-              child: widget.drawerChild,
+              child: widget.child,
             ),
           ),
         ),
