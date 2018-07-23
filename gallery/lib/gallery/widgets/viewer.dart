@@ -8,17 +8,16 @@ class Viewer extends StatefulWidget {
   /// Children to show on the viewer
   final List<Widget> children;
 
-  /// Indicates the initial active index, or subsequent index changes
-  final int activeIndex;
-
   /// Reports when the user changed to another child by swiping
   final Function(int) onActiveChanged;
+
+  final ValueNotifier<int> activeNotifier;
 
   const Viewer({
     Key key,
     @required this.children,
-    @required this.activeIndex,
     @required this.onActiveChanged,
+    @required this.activeNotifier,
   }) : super(key: key);
 
   @override
@@ -64,7 +63,14 @@ class _PictureViewerState extends State<Viewer>
           if (_currentScale == 1.0) _currentOffset = Offset(0.0, 0.0);
         });
       });
-    scrollPercent = (1 / widget.children.length) * widget.activeIndex;
+    widget.activeNotifier.addListener(() {
+      _currentScale = 1.0;
+      _currentOffset = Offset.zero;
+      finishDragStart = scrollPercent;
+      finishDragEnd =
+          (1 / widget.children.length) * widget.activeNotifier.value;
+      controller.forward(from: 0.0);
+    });
   }
 
   int get currentIndex =>

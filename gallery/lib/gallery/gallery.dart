@@ -19,6 +19,7 @@ class Gallery extends StatefulWidget {
 }
 
 class _GalleryState extends State<Gallery> {
+  ValueNotifier<int> activeIndexNotifier;
   Widget activeChild;
   bool carouselVisible = true;
 
@@ -26,6 +27,7 @@ class _GalleryState extends State<Gallery> {
   void initState() {
     super.initState();
     activeChild = widget.children.first;
+    activeIndexNotifier = ValueNotifier<int>(0);
   }
 
   int get activeIndex => widget.children.indexOf(activeChild);
@@ -36,7 +38,7 @@ class _GalleryState extends State<Gallery> {
       children: [
         Viewer(
           children: widget.children,
-          activeIndex: activeIndex,
+          activeNotifier: activeIndexNotifier,
           onActiveChanged: (index) {
             setState(() {
               activeChild = widget.children[index];
@@ -55,6 +57,10 @@ class _GalleryState extends State<Gallery> {
                         onPressed: () {
                           setState(() {
                             activeChild = child;
+
+                            /// Updates the active index
+                            activeIndexNotifier.value =
+                                widget.children.indexOf(child);
                           });
                         },
                       ))
