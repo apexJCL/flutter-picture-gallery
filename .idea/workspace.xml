@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c36b828-b998-46b0-8479-dd4dac4a6acd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gallery/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/gallery/lib/main.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+            <state relative-caret-position="360">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -35,7 +33,7 @@
       <file leaf-file-name="gallery.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="-36">
               <caret line="64" column="90" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -85,8 +83,8 @@
       <file leaf-file-name="thumbnails.drawer.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="324">
+              <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -139,6 +137,7 @@
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.carousel.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/gallery/gallery.dart" />
+        <option value="$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart" />
         <option value="$PROJECT_DIR$/gallery/lib/main.dart" />
       </list>
     </option>
@@ -273,12 +272,12 @@
       <workItem from="1531967115713" duration="4577000" />
       <workItem from="1532293024306" duration="8615000" />
       <workItem from="1532312583018" duration="3278000" />
-      <workItem from="1532352220009" duration="6621000" />
+      <workItem from="1532352220009" duration="7131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26504000" />
+    <option name="totallyTimeSpent" value="27014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="4" width="1370" height="1050" extended-state="0" />
@@ -306,11 +305,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.2858684" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924812" visible="true" weight="0.2858684" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924812" weight="0.32901832" />
       <window_info id="Captures" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2503771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2503771" />
       <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -600,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/viewer.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-485">
@@ -619,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/gallery.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="-36">
           <caret line="64" column="90" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -627,10 +619,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gallery/lib/gallery/widgets/thumbnails.drawer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gallery/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+        <state relative-caret-position="360">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

@@ -34,9 +34,9 @@ class MyHomePage extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Gallery(
-        activeItemColor: Colors.blueAccent,
-        backgroundColor: Color(0xFFE4E4E4),
-        carouselBackgroundColor: Color(0xFFFFFFFF),
+        activeItemColor: Color(0xFF6A0AEA),
+        backgroundColor: Color(0xFFF3F3F3),
+        carouselBackgroundColor: Color(0xAAE3E3E3),
         children: List.generate<Widget>(
           10,
           (index) => Image.network(
