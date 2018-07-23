@@ -41,6 +41,10 @@ class _PictureViewerState extends State<Viewer>
   Offset _normalizedOffset;
   double _previousScale;
 
+  /// Indicates the level for when double tapping the picture
+  /// 1  > double tap > 2 > double tap > 4 > double tap = 1
+  ScaleLevel _scaleLevel = ScaleLevel.NORMAL;
+
   @override
   void initState() {
     super.initState();
@@ -64,8 +68,7 @@ class _PictureViewerState extends State<Viewer>
         });
       });
     widget.activeNotifier.addListener(() {
-      _currentScale = 1.0;
-      _currentOffset = Offset.zero;
+      _resetScalePanning();
       finishDragStart = scrollPercent;
       finishDragEnd =
           (1 / widget.children.length) * widget.activeNotifier.value;
@@ -95,6 +98,7 @@ class _PictureViewerState extends State<Viewer>
       onScaleStart: _scaleStart,
       onScaleEnd: _scaleEnd,
       onScaleUpdate: _scaleUpdate,
+      onDoubleTap: _doubleTapHandle,
     );
   }
 
@@ -178,4 +182,37 @@ class _PictureViewerState extends State<Viewer>
   }
 
 // Taken from Flutter / Gallery / Material / GridView
+
+  void _resetScalePanning() {
+    setState(() {
+      _currentOffset = Offset.zero;
+      _currentScale = 1.0;
+      _scaleLevel = ScaleLevel.NORMAL;
+    });
+  }
+
+  void _doubleTapHandle() {
+    setState(() {
+      switch (_scaleLevel) {
+        case ScaleLevel.NORMAL:
+          _scaleLevel = ScaleLevel.X2;
+          _currentScale = 2.0;
+          break;
+        case ScaleLevel.X2:
+          _scaleLevel = ScaleLevel.X4;
+          _currentScale = 4.0;
+          break;
+        case ScaleLevel.X4:
+        default:
+          _resetScalePanning();
+          break;
+      }
+    });
+  }
+}
+
+enum ScaleLevel {
+  NORMAL,
+  X2,
+  X4,
 }
