@@ -95,8 +95,13 @@ class _CarouselState extends State<ThumbnailsDrawer>
     finishDragStart = controller.value;
     finishDragEnd =
         (controller.value * context.size.height).round() / context.size.height;
-    print(finishDragEnd);
-    finishDragEnd < 0.5 ? controller.reverse() : controller.forward();
+    if (details.velocity.pixelsPerSecond.dy.abs() > 0) {
+      details.velocity.pixelsPerSecond.dy > 0
+          ? controller.forward()
+          : controller.reverse();
+    } else {
+      finishDragEnd < 0.5 ? controller.reverse() : controller.forward();
+    }
     setState(() {
       initialDragPosition = null;
       initialPercentValue = null;

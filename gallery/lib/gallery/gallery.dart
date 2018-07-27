@@ -2,6 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_widget_gallery/gallery/widgets/widgets.dart';
 
+/// Main Widget that will display the children you pass on to it on a list
+/// form. You can scroll horizontally and there's a bottom drawer that
+/// shows a miniature list with the same children.
+///
+/// [children] is a list of widgets that will be displayed
+/// [activeItemColor] indicates the color of the border to display on the bottom
+/// carousel
+/// [carouselBackgroundColor] indicates the color of the bottom carousel, while
+/// [carouselBackgroundItemColor] indicates the background for the children, being
+/// that those are showed in an [AspectRatio] widget.
+///
+/// [backgroundColor] indicates the overall widget background color.
+///
+/// You can use the callbacks for handling child tap and long press,
+/// [onChildTap] handles single tap, while [onChildLongPress] handles long pressing.
+///
+/// These callbacks return the index of the child
 class Gallery extends StatefulWidget {
   /// List of children to be rendered on both the view
   /// and the drawer picker

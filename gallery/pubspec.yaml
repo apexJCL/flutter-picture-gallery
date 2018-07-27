@@ -1,5 +1,8 @@
 name: flutter_widget_gallery
-description: Widget Gallery Viewer
+description: Widget Gallery Viewer.
+  It allows that you show pictures (or any other widget) in a horizontal scrollable way.
+  Allows panning, zooming, tap/long press.
+  Shows a bottom carousel that displays miniatures of the same widgets you use.
 author: José Carlos López Gaona <jcl.isc@gmail.com>
 homepage: https://github.com/apexJCL/flutter-picture-gallery/tree/master
 version: 0.1.2+1
@@ -61,3 +64,17 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
+# https://www.dartlang.org/guides/language/analysis-options
+analyzer:
+  strong-mode: true
+
+# Source of linter options:
+# http://dart-lang.github.io/linter/lints/options/options.html
+linter:
+  rules:
+    - camel_case_types
+    - hash_and_equals
+    - iterable_contains_unrelated_type
+    - list_remove_unrelated_type
+    - unrelated_type_equality_checks
+    - valid_regexps

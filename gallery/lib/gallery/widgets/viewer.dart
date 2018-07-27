@@ -183,6 +183,7 @@ class _PictureViewerState extends State<Viewer>
     if (scaling) {
       return;
     }
+    // TODO: use details.velocity for previous/next picture
     finishDragStart = scrollPercent;
     finishDragEnd = (scrollPercent * widget.children.length).round() /
         widget.children.length;
