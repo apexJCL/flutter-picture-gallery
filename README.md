@@ -7,12 +7,47 @@ It includes a bottom drawer to show the list of the children that are visible.
 
 Implementation heavily relies on [Flutter Gallery Demo / Gridview](https://github.com/flutter/flutter/blob/master/examples/flutter_gallery/lib/demo/material/grid_list_demo.dart) and [Fluttery Cards](https://github.com/matthew-carroll/flutter_ui_challenge_flip_carousel)
 
-## Usage
+## Installing
 
-To get started, add 'flutter_widget_gallery' [as a dependency in your `pubspec.yaml`](https://flutter.io/platform-plugins/)
+**1. Edit your `pubspec.yaml` file:** 
+```yaml
+dependencies:
+  flutter_widget_gallery: ^0.1.2
+```
+
+**2. Install the packages**
+
+**3. Import the Gallery Widget**
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_widget_gallery/gallery/gallery.dart';
 
 
-Example
+class PhotoViewer extends StatelessWidget {
+  final List<Widget> pictures;
+
+  const PhotoViewer({Key key, this.pictures}) : super(key: key);
+  
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Gallery(
+        children: pictures,
+        activeItemColor: Theme.of(context).primaryColor,
+        carouselBackgroundColor: Color(0xCCEAEAEA),
+        carouselBackgroundItemColor: Color(0xFF000000),
+        onChildTap: (index) => print('tapped on $index'),
+        onChildLongPress: (index) => print('long press on $index'),
+      ),
+    );
+  }
+}
+
+```
+
+
+## Example 2
 
 ```dart
 import 'package:flutter/material.dart';

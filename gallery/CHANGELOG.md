@@ -1,3 +1,9 @@
+# 0.1.2+1
+
++ Migrated repo to GitHub
++ Updated README on root
++ Added a more clear example of how to use it 
+
 # 0.1.2
 
 + Added carouselItemBackground color
